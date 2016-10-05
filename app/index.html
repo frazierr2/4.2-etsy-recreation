@@ -69,6 +69,71 @@
                 <li><a href="#">Shoes</a></li>
                 <li><a href="#">Pet Supplies</a></li>
               </ul>
+
+              <h3>Refine your search</h3>
+              <ul class="filter-search">
+                <h3>Shop Location</h3>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Anywhere
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">United States
+                  </label>
+                </div>
+                <a href="#">Choose a custom location</a>
+                <hr>
+
+                <h3>Item type</h3>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="itemtype" id="optionsRadios1" value="option1" checked>All Items
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="itemtype" id="optionsRadios2" value="option2">Handmade
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="itemtype" id="optionsRadios2" value="option2">Vintage
+                  </label>
+                </div>
+                <hr>
+
+                <h3>Price($)</h3>
+
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="price" id="optionsRadios1" value="option1" checked>Any price
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="price" id="optionsRadios2" value="option2">Under $25
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="price" id="optionsRadios2" value="option2">$25 to $50
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="price" id="optionsRadios2" value="option2">$50 to $100
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="price" id="optionsRadios2" value="option2">Over $100
+                  </label>
+                </div>
+                <hr>
+              </ul>
+
             </div>
 
         <!-- ************RIGHT SIDE OF MIDDLE WHERE JS GUTS WILL BE******** -->
@@ -78,75 +143,6 @@
               <!-- ******PRODUCT-LISTING******* -->
             </div>
 
-            <!-- ***********FILTER SECTION -LEFT SIDE NAV************* -->
-                <!-- <div class="row"> -->
-                  <div class="col-sm-3 refine-search">
-                    <h3>Refine your search</h3>
-                    <ul class="filter-search">
-                      <h3>Shop Location</h3>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Anywhere
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">United States
-                        </label>
-                      </div>
-                      <a href="#">Choose a custom location</a>
-                      <hr>
-
-                      <h3>Item type</h3>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="itemtype" id="optionsRadios1" value="option1" checked>All Items
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="itemtype" id="optionsRadios2" value="option2">Handmade
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="itemtype" id="optionsRadios2" value="option2">Vintage
-                        </label>
-                      </div>
-                      <hr>
-
-                      <h3>Price($)</h3>
-
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="price" id="optionsRadios1" value="option1" checked>Any price
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="price" id="optionsRadios2" value="option2">Under $25
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="price" id="optionsRadios2" value="option2">$25 to $50
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="price" id="optionsRadios2" value="option2">$50 to $100
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" name="price" id="optionsRadios2" value="option2">Over $100
-                        </label>
-                      </div>
-                      <hr>
-                    </ul>
-                  </div>
-
-
           </div>
         </div>
 
@@ -154,7 +150,7 @@
     </div>
 
     <script id="product-listings" type="text/x-handlebars-template">
-      <div class="col-sm-3 data-box">
+      <div class="col-sm-3 col-xs-6 data-box">
         <img src={{images}} alt=""></img>
         <p>
           <h6>{{title}}</h6>
