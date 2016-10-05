@@ -13,14 +13,10 @@ var template = handlebars.compile(source);
 // console.log(source);
 
 fetchJSONP(url, function(data) {
-
   var dataArray = data.results;
   // console.log(data.results);
-
   var itemInfo = [];
-
 dataArray.forEach(function(items){
-
   var newObjectInfo={
     'images': items.Images[0].url_fullxfull,
     'title': items.title,
@@ -30,9 +26,7 @@ dataArray.forEach(function(items){
   itemInfo.push(newObjectInfo);
 });
  console.log(itemInfo);
-
-
-
+ 
 itemInfo.forEach(function(displayToPage){
   $('.js-block').append(template(displayToPage));
 });
