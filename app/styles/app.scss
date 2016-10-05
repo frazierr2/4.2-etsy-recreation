@@ -15,3 +15,46 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 img {
   max-width: 100%;
 }
+
+//******** HEADER - LEFT NAV ************
+.form-group{
+  width: 300px;
+}
+.input-group{
+  width: 300px;
+}
+
+.header{
+  margin-top: 20px;
+  nav{
+    display: inline-block;
+    margin-top: 7px;
+  }
+  form{
+    display: inline-block;
+  }
+  ul{
+    display: inline-block;
+    float: right;
+  }
+  li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 15px;
+  }
+  img{
+  height: 50px;
+  }
+  .login{
+    border: 1px solid #0192B5;
+    border-radius: 5px;
+
+  }
+  .login:hover{
+    background-color: #9FD6F1;
+
+  }
+  ul > img{
+    background-color: #888888;
+  }
+}
