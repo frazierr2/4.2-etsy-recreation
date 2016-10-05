@@ -23,9 +23,12 @@ img {
 .input-group{
   width: 300px;
 }
-
+.banner-top{
+  border-bottom: 1px solid grey;
+}
 .header{
   margin-top: 20px;
+
   nav{
     display: inline-block;
     margin-top: 7px;
@@ -35,7 +38,7 @@ img {
   }
   ul{
     display: inline-block;
-    float: right;
+    text-align: right;
   }
   li{
     display: inline-block;
@@ -57,4 +60,13 @@ img {
   ul > img{
     background-color: #888888;
   }
+}
+.nav-bar{
+  padding-left: 0;
+  padding-top: 20px;
+  margin-bottom: 10px;
+ a{
+   padding-right: 12px;
+   color: #77777B;
+}
 }
