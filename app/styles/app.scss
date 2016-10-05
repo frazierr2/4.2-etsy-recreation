@@ -70,3 +70,58 @@ img {
    color: #77777B;
 }
 }
+
+
+// ***************LEFT SIDE-BAR************
+.middle-box{
+  background-color: #F5F5F1;
+  height: 1200px;
+
+}
+.nav-list-head h3{
+  font-size: 15px;
+  color: #424242;
+}
+.nav-list{
+  padding-top: 1px;
+  padding-bottom: 15px;
+  list-style: none;
+  background-color: #FBFBFB;
+  li{
+    color: #0192B5;
+    padding: 3px;
+  }
+  h3{
+    color: #424242;
+    font-size: 15px;
+  }
+}
+
+// *****JQUERY BLOCK*******
+
+.js-block{
+  background-color: lightgrey;
+  height: 600px;
+  float: right;
+}
+
+// ****REFINE SECTION*******
+.refine-search{
+  h3{
+    color: #424242;
+    font-size: 15px;
+  }
+
+}
+.filter-search{
+  background-color: #FBFBFB;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 15px;
+  hr{
+    background: #E1E3DF;
+    height: 1px;
+
+  }
+}
