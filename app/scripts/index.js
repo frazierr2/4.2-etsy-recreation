@@ -1,65 +1,43 @@
-//*****API-ETSY*********
-var url = "https://api.etsy.com/v2/listings/active.js?api_key=cdwxq4soa7q4zuavbtynj8wx&keywords=yarn&includes=Images,Shop";
-
-fetchJSONP(url, function(data) {
-  // do something with data
-  //something like...... [displayProduct(data)]
-});
-
-//****ADDING JQUERY,UNDERSCORE AND HANDLEBARS INTO THE PROJECT*****
+// //****ADDING JQUERY,UNDERSCORE AND HANDLEBARS INTO THE PROJECT*****
 var $ = require('jquery');
 var _ = require('underscore');
 var handlebars = require('handlebars');
 
-//*****START OF THE CODE********
-var source = $('#photo-album').html();
+
+//*****API-ETSY*********
+var url = "https://api.etsy.com/v2/listings/active.js?api_key=cdwxq4soa7q4zuavbtynj8wx&keywords=golf&includes=Images,Shop";
+// console.log(url);
+
+var source = $('#product-listings').html();
 var template = handlebars.compile(source);
-console.log(source);
+// console.log(source);
 
-var context = {
-  'title': 'Cat Album',
-}
+fetchJSONP(url, function(data) {
 
+  var dataArray = data.results;
+  // console.log(data.results);
 
-var albums =[
-  {
-    'title': 'Cat Album',
-  },{
-    'title': 'Dog Album',
-  },{
-    'title': 'Bird Album',
-  },{
-    'title': 'Bear Album',
+  var itemInfo = [];
+
+dataArray.forEach(function(items){
+
+  var newObjectInfo={
+    'images': items.Images[0].url_fullxfull,
+    'title': items.title,
+    'shop-name' : items.Shop.shop_name,
+    'price' : items.price
   }
+  itemInfo.push(newObjectInfo);
+});
+ console.log(itemInfo);
 
-];
 
-_.each(albums, function(album){
-  $('#album-container').append(template(album))
+
+itemInfo.forEach(function(displayToPage){
+  $('.js-block').append(template(displayToPage));
 });
 
-
-// $('#album-container').html(template(context));
-// $('#album-container').append(template());  //it just keeps adding the above line
-// $('#album-container').append(template());
-// $('#album-container').append(template());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 
 /*

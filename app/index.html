@@ -72,10 +72,10 @@
             </div>
 
         <!-- ************RIGHT SIDE OF MIDDLE WHERE JS GUTS WILL BE******** -->
-            <div class="col-sm-9 js-block">
-              <div class="col-sm-3">
 
-              </div>
+            <div class="col-sm-9 js-block">
+              <h4>Top categories for “golf”</h4>
+              <!-- ******PRODUCT-LISTING******* -->
             </div>
 
             <!-- ***********FILTER SECTION -LEFT SIDE NAV************* -->
@@ -100,17 +100,17 @@
                       <h3>Item type</h3>
                       <div class="radio">
                         <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>All Items
+                          <input type="radio" name="itemtype" id="optionsRadios1" value="option1" checked>All Items
                         </label>
                       </div>
                       <div class="radio">
                         <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Handmade
+                          <input type="radio" name="itemtype" id="optionsRadios2" value="option2">Handmade
                         </label>
                       </div>
                       <div class="radio">
                         <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Vintage
+                          <input type="radio" name="itemtype" id="optionsRadios2" value="option2">Vintage
                         </label>
                       </div>
                       <hr>
@@ -119,27 +119,27 @@
 
                       <div class="radio">
                         <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Any price
+                          <input type="radio" name="price" id="optionsRadios1" value="option1" checked>Any price
                         </label>
                       </div>
                       <div class="radio">
                         <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Under $25
+                          <input type="radio" name="price" id="optionsRadios2" value="option2">Under $25
                         </label>
                       </div>
                       <div class="radio">
                         <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">$25 to $50
+                          <input type="radio" name="price" id="optionsRadios2" value="option2">$25 to $50
                         </label>
                       </div>
                       <div class="radio">
                         <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">$50 to $100
+                          <input type="radio" name="price" id="optionsRadios2" value="option2">$50 to $100
                         </label>
                       </div>
                       <div class="radio">
                         <label>
-                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Over $100
+                          <input type="radio" name="price" id="optionsRadios2" value="option2">Over $100
                         </label>
                       </div>
                       <hr>
@@ -147,34 +147,22 @@
                   </div>
 
 
-
-                <!-- </div> -->
-
           </div>
         </div>
 
 
-
-
-
-
-
-
-
-
-
     </div>
 
-
-    <!-- <script id="photo-album" type="text/x-handlebars-template">
-    <div class="col-md-6">
-      <h2>{{title}}</h2>
-      <img <src="http://unsplash.it/200/200" alt=""/>
-    </div>
-    </script> -->
-
-
-
+    <script id="product-listings" type="text/x-handlebars-template">
+      <div class="col-sm-3 data-box">
+        <img src={{images}} alt=""></img>
+        <p>
+          <h6>{{title}}</h6>
+          <a href="#">{{shop-name}}</a>
+          <span>{{price}}</span>
+        </p>
+      </div>
+    </script>
 
     <script src="js/bundle.js"></script>
   </body>

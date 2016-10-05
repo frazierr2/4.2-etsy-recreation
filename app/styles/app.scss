@@ -76,6 +76,7 @@ img {
 .middle-box{
   background-color: #F5F5F1;
   height: 1200px;
+  overflow: auto;
 
 }
 .nav-list-head h3{
@@ -100,9 +101,16 @@ img {
 // *****JQUERY BLOCK*******
 
 .js-block{
-  background-color: lightgrey;
+  // background-color: lightgrey;
   height: 600px;
   float: right;
+  padding: 0;
+  h4{
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-top: 27px;
+    background-color: #F5F5F1;
+  }
 }
 
 // ****REFINE SECTION*******
@@ -123,5 +131,21 @@ img {
     background: #E1E3DF;
     height: 1px;
 
+  }
+}
+
+.data-box{
+  height: 300px;
+  margin-bottom: 20px;
+  img{
+    width: 200px;
+    height: 200px;
+  }
+  h6{
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+  span{
+    float: right;
   }
 }
