@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 2 etsy recreation</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="container">
+  <!-- ******** LEFT SIDE OF BANNER******* -->
+      <div class="row banner-top">
+        <header class="header">
+          <nav class="left-nav col-sm-6 col-xs-6">
+            <img class="logo"src="images/logo.png" alt=""></img>
+            <form class="form-inline">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Search for items or shops">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+          </nav>
+      <!-- **********RIGHT SIDE OF BANNER********* -->
+          <ul class="right-nav-ul col-sm-6">
+            <li><a href="#">Sell on Etsy</a></li>
+            <li><a href="#">Register</a></li>
+            <li class="login"><a href="#"style="text-decoration:none">Sign in</a></li>
+            <li><img src="images/cart.png" alt="" /></li>
+          </ul>
+        </header>
+        </div>
+    <!-- ************** NAV BAR ************** -->
+        <div class="row">
+          <div class="nav-bar col-sm-12">
+            <a href="#"style="text-decoration:none">Clothing &amp; Accessories</a>
+            <a href="#"style="text-decoration:none">Jewelry</a>
+            <a href="#"style="text-decoration:none">Crafts Supplies &amp; Tools</a>
+            <a href="#"style="text-decoration:none">Weddings</a>
+            <a href="#"style="text-decoration:none">Entertainment</a>
+            <a href="#"style="text-decoration:none">Home &amp; Living</a>
+            <a href="#"style="text-decoration:none">Kids &amp; Baby</a>
+            <a href="#"style="text-decoration:none">Vintage</a>
+          </div>
+        </div>
+    <!-- ********** LEFT SIDE BAR*********** -->
+
+        <div class="row">
+          <div class="middle-box">
+            <div class="col-sm-3 nav-list-head">
+              <h3>Show results for:</h3>
+              <ul class="nav-list">
+                <h3>All Categories:</h3>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Home &amp; Living</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Art &amp; Collections</a></li>
+                <li><a href="#">Jewelry</a></li>
+                <li><a href="#">Craft Supplies &amp; Tools</a></li>
+                <li><a href="#">Toys &amp; Games</a></li>
+                <li><a href="#">Paper &amp; Party Supplies</a></li>
+                <li><a href="#">Bags &amp; Purses</a></li>
+                <li><a href="#">Weddings</a></li>
+                <li><a href="#">Electronics &amp; Accessories</a></li>
+                <li><a href="#">Bath &amp; Beauty</a></li>
+                <li><a href="#">Books, Movies &amp; Music</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Pet Supplies</a></li>
+              </ul>
+
+              <h3>Refine your search</h3>
+              <ul class="filter-search">
+                <h3>Shop Location</h3>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Anywhere
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">United States
+                  </label>
+                </div>
+                <a href="#">Choose a custom location</a>
+                <hr>
+
+                <h3>Item type</h3>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="itemtype" id="optionsRadios1" value="option1" checked>All Items
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="itemtype" id="optionsRadios2" value="option2">Handmade
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="itemtype" id="optionsRadios2" value="option2">Vintage
+                  </label>
+                </div>
+                <hr>
+
+                <h3>Price($)</h3>
+
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="price" id="optionsRadios1" value="option1" checked>Any price
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="price" id="optionsRadios2" value="option2">Under $25
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="price" id="optionsRadios2" value="option2">$25 to $50
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="price" id="optionsRadios2" value="option2">$50 to $100
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="price" id="optionsRadios2" value="option2">Over $100
+                  </label>
+                </div>
+
+
+
+
+                <form class="form-inline search-price">
+                    <div class="form-group price-to-from">
+                      <label class="sr-only" for="exampleInputEmail3">To</label>
+                      <input type="text" class="form-control" id="exampleInputEmail3" placeholder="To">
+                    </div>
+                    <div class="form-group price-to-from">
+                      <label class="sr-only" for="exampleInputPassword3">From</label>
+                      <input type="text" class="form-control" id="exampleInputPassword3" placeholder="From">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Go</button>
+              </form>
+
+
+              <hr>
+              </ul>
+
+            </div>
+
+        <!-- ************RIGHT SIDE OF MIDDLE WHERE JS GUTS WILL BE******** -->
+
+            <div class="col-sm-9 js-block">
+              <h4>Top categories for “golf”</h4>
+              <!-- ******PRODUCT-LISTING******* -->
+            </div>
+
+          </div>
+        </div>
+
+
+    </div>
+
+    <script id="product-listings" type="text/x-handlebars-template">
+      <div class="col-sm-3 data-box">
+        <img src={{images}} alt=""></img>
+        <p>
+          <h6>{{title}}</h6>
+          <a href="#">{{shop-name}}</a>
+          <span>{{price}}</span>
+        </p>
+      </div>
+    </script>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
