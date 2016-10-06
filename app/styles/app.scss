@@ -1,7 +1,7 @@
 
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
-
+$grid-gutter-width:         10px !default;
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
@@ -79,9 +79,11 @@ img {
   overflow: auto;
 
 }
+
 .nav-list-head h3{
   font-size: 15px;
   color: #424242;
+
 }
 .nav-list{
   padding-top: 1px;
@@ -135,8 +137,11 @@ img {
 }
 
 .data-box{
-  height: 300px;
+  height: 265px;
+  width: 200px;
+  margin-right: 15px;
   margin-bottom: 20px;
+  background-color: white;
   img{
     width: 100%;
     height: 200px;
