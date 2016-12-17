@@ -17,7 +17,7 @@ During the development of this project I used the following technology:
 
 
 
-### Link to U-Grub Web App
+### Link to Web App
 which is located [HERE]
 
 
